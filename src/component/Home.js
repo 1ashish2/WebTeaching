@@ -5,6 +5,8 @@ import "aos/dist/aos.css";
 import Portfolio from './Portfolio';
 // import Counting from './Counting';
 import { useNavigate } from "react-router-dom"
+import Feature from './Feature';
+import Service from './Service';
 const Home = () => {
   const navigate = useNavigate()
   useEffect(() => {
@@ -95,123 +97,12 @@ const Home = () => {
           </a>
         </div>
 
-        <div className="container marketing">
-
-          
-
-          <div className="row">
-            <div className="col-lg-4">
-              <i className="fa fa-book icon" style={fontStyle}></i>
-              {/* <img className="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140" /> */}
-              <h2>IB COURSES</h2>
-              <p>Provide online training through Skype
-                sessions and interactive white board
-                facility.</p>   <p><a className="btn btn-default" href="#" role="button">Contact For Demo &raquo;</a></p>
-            </div>
-
-            <div className="col-lg-4">
-              <i className="fa fa-graduation-cap icon" style={fontStyle}></i>
-              {/* <img className="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140" /> */}
-              <h2>IGCSE COURSES</h2>
-              <p>Provide online training through Skype
-                sessions and interactive white board
-                facility.</p><p><a className="btn btn-default" href="#" role="button">Contact For Demo &raquo;</a></p>
-            </div>
-
-            <div className="col-lg-4">
-              <i className="fa fa-certificate icon" style={fontStyle}></i>
-              {/* <img className="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140" /> */}
-              <h2>TRAINING MODE</h2>
-              <p>Provide online training through Skype
-                sessions and interactive white board
-                facility.</p>
-              <p><a className="btn btn-default" href="#" role="button">Contact For Demo &raquo;</a></p>
-            </div>
-
-          </div>
- 
-        
-
-          <hr className="featurette-divider" />
-
-          <div className="row featurette">
-            <div className="col-md-7">
-              <h2 className="featurette-heading">First featurette heading. <span className="text-muted">It'll blow your mind.</span></h2>
-              <p className="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div className="col-md-5">
-              <img className="featurette-image img-responsive center-block" src="https://gdgws.gdgoenka.com/wp-content/uploads/2019/01/ibprograme.png" alt="Generic placeholder image" />
-            </div>
-          </div>
-
-          <hr className="featurette-divider" />
-
-          <div className="row featurette">
-            <div className="col-md-7 col-md-push-5">
-              <h2 className="featurette-heading">Oh yeah, it's that good. <span className="text-muted">See for yourself.</span></h2>
-              <p className="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div className="col-md-5 col-md-pull-7">
-              <img className="featurette-image img-responsive center-block" src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/asia-student-group-in-university-work-hard-togather-for-make-a-r-anek-suwannaphoom.jpg" alt="Generic placeholder image" />
-            </div>
-          </div>
-
-          <hr className="featurette-divider" />
-
-          <div className="row featurette">
-            <div className="col-md-7">
-              <h2 className="featurette-heading">And lastly, this one. <span className="text-muted">Checkmate.</span></h2>
-              <p className="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div className="col-md-5">
-              <img className="featurette-image img-responsive center-block" src="https://www.ibyb.org/images/uploads/3a2b9ac2f94c83aeb2f8121bb9b1ef43.jpg" alt="Generic placeholder image" />
-            </div>
-          </div>
-        </div>
-
-        <div className="container-fluid" style={mainHeading3}>
-          <div className="row" style={{ margin: "auto" }}>
-            <div className="row  text-center">
-              <i className="fa fa-star" style={iconStyle}></i>
-              <i className="fa fa-star" style={iconStyle2}></i>
-              <i className="fa fa-star" style={iconStyle3}></i>
-              <i className="fa fa-star" style={iconStyle2}></i>
-              <i className="fa fa-star" style={iconStyle}></i>
-            </div>
-            <div className="row text-center" style={{ color: "rgb(56, 16, 94)" }}>
-              <h2>AMIT'S IB CHEMISTRY EDUCATION</h2>
-            </div>
-            <hr style={{ backgroundColor: "rgb(142, 240, 13)", height: "2PX" }} />
-          </div>
-        </div>
+      <Feature />
+      <div className='container'>
+      <Service />
+      </div>
        
-        <div className="container-fluid mb-2" style={{ backgroundColor: "white" }}>
         
-          <div className="row">
-            <div className="col-md-6 col-sm-12" data-aos="zoom-in">
-              <img src="https://everfi.com/wp-content/uploads/2019/09/b4b-1-alt.png" className="img-responsive" alt="Responsive image" />
-
-            </div>
-            <div className="col-md-6 col-sm-12 info-className">
-              <div className="row">
-                <h3 style={{ color: "rgb(56, 16, 94)" }}><i className="fa fa-user" style={fontStyle2}></i>Our Faculty</h3>
-                <p style={{ fontSize: "1.6rem" }}>Having more than 10 years of experience Mr Amit Kumar is proficient in handling IB , IGCSE, ACT & SAT along with other Chemistry Subjects.</p>
-              </div>
-              <div className="row">
-                <h3 style={{ color: "rgb(56, 16, 94)" }}><i className="fa fa-book" style={fontStyle2}></i>Course Reach </h3>
-                <p style={{ fontSize: "1.6rem" }}>We are offering our online tutoring service to the students of the major cities belonging to different countries all over the world.</p>
-              </div>
-              <div className="row">
-                <h3 style={{ color: "rgb(56, 16, 94)" }}><i className="fa fa-thumbs-o-up" style={fontStyle2}></i>Our USP </h3>
-                <p style={{ fontSize: "1.6rem" }}>We teach online through interactive sessions, pertaining to the needs of students individually in a customized manner.</p>
-              </div>
-              <div className="row">
-                <h3 style={{ color: "rgb(56, 16, 94)" }}><i className="fa fa-laptop" style={fontStyle2}></i>Teaching Tools</h3>
-                <p style={{ fontSize: "1.6rem" }}>We offer online training through face to face skype video sessions while sharing the interactive white board for explanation purpose.</p>
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="container-fluid" style={{ backgroundColor: "rgba(22, 18, 18,0.9)", minHeight: "20rem",marginTop:"5rem",marginBottom:"5rem", color: "white" }}>
           <div className="row" >
             <div className="col-md-10 " style={{ display: "flex", flexWrap: "wrap", height: "20rem" }}>
@@ -229,54 +120,6 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="container-fluid" style={{ backgroundColor: "white" }}>
-          <div className="row">
-            
-            <div className="col-md-6">
-              <div className="row text-center info-target" >
-                <div className="col-md-3 col-sm-12" style={{ height: "20rem", display: "flex", flexWrap: "wrap" }} >
-                  <div style={{ display: "flex", flexWrap: "wrap", width: "10rem", height: "10rem", margin: "auto", backgroundColor: "rgba(73, 109, 226, 0.7)", borderRadius: "5rem" }}>
-                    <i className="fa fa-line-chart" style={{ fontSize: "46px", color: "white", margin: "auto" }}></i>
-                  </div>
-
-                </div>
-                <div className="col-md-8 col-sm-12 text-left">
-                  <h2 style={{ paddingTop: "3rem" }}>Our Values</h2>
-                  <p style={{ fontSize: "1.6rem" }}>We extend values beyond the classNameroom by making sure skills and concepts taught in our online sessions are realistically beneficial in the world beyond school</p>
-                </div>
-              </div>
-              <div className="row info-target" >
-                <div className="col-md-3" style={{ height: "20rem", display: "flex", flexWrap: "wrap" }} >
-                  <div style={{ display: "flex", flexWrap: "wrap", width: "10rem", height: "10rem", margin: "auto", backgroundColor: "rgba(73, 109, 226, 0.7)", borderRadius: "5rem" }}>
-                    <i className="fa fa-trophy" style={{ fontSize: "46px", color: "white", margin: "auto" }}></i>
-                  </div>
-
-                </div>
-                <div className="col-md-8 text-left" >
-                  <h2 style={{ paddingTop: "3rem" }}>Our Approach</h2>
-                  <p style={{ fontSize: "1.6rem" }}>Offering a friendly environment in which student can successfully learn basic skills and core academic content, develop his or her special talents and social competencies</p>
-                </div>
-              </div>
-
-              <div className="row info-target" >
-                <div className="col-md-3" style={{ height: "20rem", display: "flex", flexWrap: "wrap" }} >
-                  <div style={{ display: "flex", flexWrap: "wrap", width: "10rem", height: "10rem", margin: "auto", backgroundColor: "rgba(73, 109, 226, 0.7)", borderRadius: "5rem" }}>
-                    <i className="fa fa-key" style={{ fontSize: "46px", color: "white", margin: "auto" }}></i>
-                  </div>
-
-                </div>
-                <div className="col-md-8 text-left">
-                  <h2 style={{ paddingTop: "3rem" }}>Our Mission</h2>
-                  <p style={{ fontSize: "1.6rem" }}>Inspiring students to achieve potential and personal goals through activities that are developmentally suitable, discretely paced, and personalized to each student’s academic performance and interest.</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-sm-12" style={{ paddingTop: "1rem" }} data-aos="zoom-in">
-              <img src="https://www.pngplay.com/wp-content/uploads/4/Student-Background-PNG.png" className="img-responsive" alt="Responsive image" />
-            </div>
-          </div>
-        </div>
-
         <div className="container-fluid" style={{ height: "20rem", display: "flex", flexWrap: "wrap", backgroundColor: "white" }}>
           <div className="row" style={{ margin: "auto" }}>
             <div className="row  text-center">
@@ -287,7 +130,7 @@ const Home = () => {
               <i className="fa fa-star" style={iconStyle}></i>
             </div>
             <div className="row text-center" style={{ color: "rgb(56, 16, 94)" }}>
-              <h2>AMIT'S IB CHEMISTRY EDUCATION</h2>
+              <h2>AMIT'S IB EDUCATION</h2>
             </div>
             <hr style={{ backgroundColor: "rgb(142, 240, 13)", height: "2PX" }} />
           </div>
@@ -326,6 +169,7 @@ const Home = () => {
           </div>
 
         </section>
+        <hr />
         <div className="container-fluid testmonial">
           <div className="testimonial-slider">
             <ul className="slider">
@@ -361,7 +205,8 @@ const Home = () => {
       </div>
       <hr />
       <Portfolio />
-      
+     
+     
       
     </>
   );
